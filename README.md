@@ -32,10 +32,10 @@ This notebook utilizes the breast cancer dataset from sklearn.datasets to perfor
 ## Dataset
 The notebook begins by loading the dataset and creating a Pandas DataFrame. It showcases the structure of the dataset, displaying key features like mean radius, mean texture, mean perimeter, mean area, and more.
 
-## Importing Libraries and Data
+## STEP 1: Importing Libraries and Data
 This part typically involves importing necessary libraries for data manipulation, visualization, and model building. Here, the code snippet loads breast cancer data from sklearn's dataset module and converts it into a DataFrame for easier manipulation using Pandas.
 
-## Data Visualization
+## STEP 2: Data Visualization
 ### Understanding Data Distribution:
 Pairplot: The sns.pairplot function is used to visualize pairwise relationships across multiple variables, showcasing how each feature relates to others. It helps identify potential patterns, correlations, or separability between benign and malignant tumors.
 
@@ -46,15 +46,15 @@ Scatterplot: Scatterplots like sns.scatterplot visualize the relationship betwee
 ### Correlation Analysis:
 Heatmap: The sns.heatmap represents the correlation matrix among all features. This visualization helps in identifying highly correlated features, which might impact the model's performance or introduce multicollinearity.
 
-## Model Training
+## STEP 3: Model Training
 This section involves preparing the data for training, splitting it into training and testing sets, and fitting an SVM (Support Vector Machine) classifier to the training data using sklearn.
 
-## Evaluating the Model
+## STEP 4: Evaluating the Model
 **1. Confusion Matrix Heatmap:** After model evaluation, the sns.heatmap is used to display the confusion matrix, allowing a visual representation of true positive, true negative, false positive, and false negative predictions. It helps understand the model's performance and where it misclassifies instances.
 
 **2. Normalized Features:** Visualization of the scaled or normalized features through scatterplots (sns.scatterplot) helps observe the distribution of data after normalization, which is crucial for algorithms sensitive to feature scales.
 
-## Model Improvement
+## STEP 5: Model Improvement
 ### Normalization
 This part focuses on enhancing the model's performance through normalization. Min-max scaling is applied to normalize the training and testing datasets. The SVM model is then retrained on the normalized data to observe potential improvements. Normalizing features improved the model's performance by approximately 5%, leading to better convergence and reduced sensitivity to feature scales.
 
