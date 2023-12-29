@@ -2,6 +2,30 @@
 
 This repository contains a Jupyter Notebook (classifier.ipynb) that demonstrates the classification of breast cancer using Support Vector Machines (SVM).
 
+## Problem Statement
+- Predicting if the cancer diagnosis is benign or malignant based on several observations/features 
+- 30 features are used, examples:
+        - radius (mean of distances from center to points on the perimeter)
+        - texture (standard deviation of gray-scale values)
+        - perimeter
+        - area
+        - smoothness (local variation in radius lengths)
+        - compactness (perimeter^2 / area - 1.0)
+        - concavity (severity of concave portions of the contour)
+        - concave points (number of concave portions of the contour)
+        - symmetry 
+        - fractal dimension ("coastline approximation" - 1)
+
+- Datasets are linearly separable using all 30 input features
+- Number of Instances: 569
+- Class Distribution: 212 Malignant, 357 Benign
+- Target class:
+         - Malignant
+         - Benign
+
+
+https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
+
 ## Introduction
 This notebook utilizes the breast cancer dataset from sklearn.datasets to perform classification using an SVM model. The dataset consists of various features characterizing cell nuclei present in breast images, aiming to classify tumors into malignant or benign.
 
@@ -46,7 +70,7 @@ Grid search, a hyperparameter tuning technique, is employed here. It's utilized 
 **3. Correlation Heatmap:** The heatmap of feature correlations highlighted certain pairs of features exhibiting strong correlations. Notably, 'mean radius' and 'mean perimeter' displayed a high correlation, indicating potential multicollinearity.
 
 ### Model Evaluation
-**1. Baseline Model Performance:** The initial model (e.g., logistic regression, SVM) achieved an accuracy of approximately 90% on the test set.
+**1. Baseline Model Performance:** The initial model (e.g., logistic regression, SVM) achieved an accuracy of approximately **90%** on the test set.
 
 **2. Confusion Matrix Analysis:** The confusion matrix heatmap illustrated the model's performance in classifying benign and malignant tumors. It showed that the model had a higher tendency to correctly identify benign tumors but had a few misclassifications for malignant cases.
 
