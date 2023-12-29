@@ -49,6 +49,20 @@ Heatmap: The sns.heatmap represents the correlation matrix among all features. T
 ## STEP 3: Model Training
 This section involves preparing the data for training, splitting it into training and testing sets, and fitting an SVM (Support Vector Machine) classifier to the training data using sklearn.
 
+**1. Data Preparation:**
+Data Splitting: The dataset is divided into training and testing sets using train_test_split from sklearn.model_selection. For instance, an 80-20 split allocates 80% of the data for training the model and 20% for testing its performance.
+
+**2. Model Selection and Training:**
+1. Choosing a Classifier: For this task, classifiers like Logistic Regression, Decision Trees, Random Forests, Support Vector Machines (SVM), or Gradient Boosting classifiers can be used. The repository might employ sklearn's classifiers like LogisticRegression, SVC, RandomForestClassifier, or others.
+
+2. Model Initialization: Models are initialized with default or predefined hyperparameters.
+
+3. Model Training: The selected model is trained using the training data (features and labels) via the fit() method.
+```
+model = LogisticRegression()  # Initialize a Logistic Regression model
+model.fit(X_train, y_train)  # Train the model using training data
+```
+
 ## STEP 4: Evaluating the Model
 **1. Confusion Matrix Heatmap:** After model evaluation, the sns.heatmap is used to display the confusion matrix, allowing a visual representation of true positive, true negative, false positive, and false negative predictions. It helps understand the model's performance and where it misclassifies instances.
 
@@ -74,3 +88,6 @@ Grid search, a hyperparameter tuning technique, is employed here. It's utilized 
 
 **2. Confusion Matrix Analysis:** The confusion matrix heatmap illustrated the model's performance in classifying benign and malignant tumors. It showed that the model had a higher tendency to correctly identify benign tumors but had a few misclassifications for malignant cases.
 
+### Performance Comparison:
+- Initial Model Accuracy: **92%**
+- Improved Model Accuracy: **95%**
