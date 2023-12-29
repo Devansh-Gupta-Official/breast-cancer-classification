@@ -8,6 +8,9 @@ This notebook utilizes the breast cancer dataset from sklearn.datasets to perfor
 ## Dataset
 The notebook begins by loading the dataset and creating a Pandas DataFrame. It showcases the structure of the dataset, displaying key features like mean radius, mean texture, mean perimeter, mean area, and more.
 
+## Importing Libraries and Data
+This part typically involves importing necessary libraries for data manipulation, visualization, and model building. Here, the code snippet loads breast cancer data from sklearn's dataset module and converts it into a DataFrame for easier manipulation using Pandas.
+
 ## Data Visualization
 ### Pair Plot
 Visualizes relationships between select features using Seaborn's pairplot function, coloring data points based on their target labels.
@@ -22,7 +25,7 @@ Two scatter plots visualize relationships between 'mean area' and 'mean smoothne
 Displays a heatmap of feature correlations using Seaborn's heatmap.
 
 ## Model Training
-The notebook moves on to train an SVM model using the dataset, splitting it into training and test sets.
+This section involves preparing the data for training, splitting it into training and testing sets, and fitting an SVM (Support Vector Machine) classifier to the training data using sklearn.
 
 ## Evaluating the Model
 ### Confusion Matrix
