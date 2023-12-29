@@ -26,8 +26,9 @@ Heatmap: The sns.heatmap represents the correlation matrix among all features. T
 This section involves preparing the data for training, splitting it into training and testing sets, and fitting an SVM (Support Vector Machine) classifier to the training data using sklearn.
 
 ## Evaluating the Model
-### Confusion Matrix
-The trained model is used to predict outcomes on the test set, and a confusion matrix along with a classification report is generated to assess the model's performance in terms of precision, recall, F1-score, and accuracy.
+**1. Confusion Matrix Heatmap:** After model evaluation, the sns.heatmap is used to display the confusion matrix, allowing a visual representation of true positive, true negative, false positive, and false negative predictions. It helps understand the model's performance and where it misclassifies instances.
+
+**2. Normalized Features:** Visualization of the scaled or normalized features through scatterplots (sns.scatterplot) helps observe the distribution of data after normalization, which is crucial for algorithms sensitive to feature scales.
 
 ## Model Improvement
 ### Normalization
