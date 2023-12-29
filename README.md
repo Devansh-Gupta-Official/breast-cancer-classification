@@ -12,17 +12,15 @@ The notebook begins by loading the dataset and creating a Pandas DataFrame. It s
 This part typically involves importing necessary libraries for data manipulation, visualization, and model building. Here, the code snippet loads breast cancer data from sklearn's dataset module and converts it into a DataFrame for easier manipulation using Pandas.
 
 ## Data Visualization
-### Pair Plot
-Visualizes relationships between select features using Seaborn's pairplot function, coloring data points based on their target labels.
+### Understanding Data Distribution:
+Pairplot: The sns.pairplot function is used to visualize pairwise relationships across multiple variables, showcasing how each feature relates to others. It helps identify potential patterns, correlations, or separability between benign and malignant tumors.
 
-### Count Plot
-Displays the count of each target label in the dataset using Seaborn's countplot.
+Countplot: The sns.countplot displays the distribution of target classes (benign and malignant) in the dataset. It helps assess the balance or imbalance between different classes, which is crucial in classification tasks.
 
-### Scatter Plots
-Two scatter plots visualize relationships between 'mean area' and 'mean smoothness', one colored by target label.
+Scatterplot: Scatterplots like sns.scatterplot visualize the relationship between two specific features (e.g., 'mean area' and 'mean smoothness') while color-coding points by their target class. This allows observing if certain features provide clear separation between the classes.
 
-### Heatmap
-Displays a heatmap of feature correlations using Seaborn's heatmap.
+### Correlation Analysis:
+Heatmap: The sns.heatmap represents the correlation matrix among all features. This visualization helps in identifying highly correlated features, which might impact the model's performance or introduce multicollinearity.
 
 ## Model Training
 This section involves preparing the data for training, splitting it into training and testing sets, and fitting an SVM (Support Vector Machine) classifier to the training data using sklearn.
