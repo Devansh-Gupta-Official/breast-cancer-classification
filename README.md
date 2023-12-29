@@ -84,10 +84,10 @@ Grid search, a hyperparameter tuning technique, is employed here. It's utilized 
 **3. Correlation Heatmap:** The heatmap of feature correlations highlighted certain pairs of features exhibiting strong correlations. Notably, 'mean radius' and 'mean perimeter' displayed a high correlation, indicating potential multicollinearity.
 
 ### Model Evaluation
-**1. Baseline Model Performance:** The initial model (e.g., logistic regression, SVM) achieved an accuracy of approximately **90%** on the test set.
+**1. Baseline Model Performance:** The initial model (e.g., logistic regression, SVM) achieved an accuracy of approximately **94%** on the test set.
 
 **2. Confusion Matrix Analysis:** The confusion matrix heatmap illustrated the model's performance in classifying benign and malignant tumors. It showed that the model had a higher tendency to correctly identify benign tumors but had a few misclassifications for malignant cases.
 
 ### Performance Comparison:
-- Initial Model Accuracy: **92%**
-- Improved Model Accuracy: **95%**
+- Initial Model Accuracy: **94%**
+- Improved Model Accuracy: **96%**
