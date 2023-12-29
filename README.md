@@ -26,12 +26,12 @@ The notebook moves on to train an SVM model using the dataset, splitting it into
 
 ## Evaluating the Model
 ### Confusion Matrix
-Displays a heatmap of the confusion matrix and provides classification metrics like precision, recall, and accuracy.
+The trained model is used to predict outcomes on the test set, and a confusion matrix along with a classification report is generated to assess the model's performance in terms of precision, recall, F1-score, and accuracy.
 
 ## Model Improvement
 ### Normalization
-Demonstrates data normalization using Min-Max scaling and its impact on model performance.
+This part focuses on enhancing the model's performance through normalization. Min-max scaling is applied to normalize the training and testing datasets. The SVM model is then retrained on the normalized data to observe potential improvements.
 
 ### Grid Search
-Utilizes Grid Search with cross-validation to optimize hyperparameters for the SVM model.
+Grid search, a hyperparameter tuning technique, is employed here. It's utilized to find the best hyperparameters for the SVM model. The code defines a parameter grid containing different values for 'C' and 'gamma' to find the optimal combination for the SVM kernel.
 
