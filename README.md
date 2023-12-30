@@ -39,12 +39,24 @@ This part typically involves importing necessary libraries for data manipulation
 ### Understanding Data Distribution:
 Pairplot: The sns.pairplot function is used to visualize pairwise relationships across multiple variables, showcasing how each feature relates to others. It helps identify potential patterns, correlations, or separability between benign and malignant tumors.
 
+![image](https://github.com/Devansh-Gupta-Official/breast-cancer-classification/assets/100591612/e2279ff6-c325-4d87-ac7a-915b09098122)
+
+
 Countplot: The sns.countplot displays the distribution of target classes (benign and malignant) in the dataset. It helps assess the balance or imbalance between different classes, which is crucial in classification tasks.
+
+![image](https://github.com/Devansh-Gupta-Official/breast-cancer-classification/assets/100591612/eabdc894-46c7-40e1-b9da-cf1bad402f94)
+
 
 Scatterplot: Scatterplots like sns.scatterplot visualize the relationship between two specific features (e.g., 'mean area' and 'mean smoothness') while color-coding points by their target class. This allows observing if certain features provide clear separation between the classes.
 
+![image](https://github.com/Devansh-Gupta-Official/breast-cancer-classification/assets/100591612/92195ffd-2454-42bd-94c7-247dcbbea3a4)
+
+
 ### Correlation Analysis:
 Heatmap: The sns.heatmap represents the correlation matrix among all features. This visualization helps in identifying highly correlated features, which might impact the model's performance or introduce multicollinearity.
+
+![image](https://github.com/Devansh-Gupta-Official/breast-cancer-classification/assets/100591612/13cac5c6-9286-483a-a644-dd3b617ce081)
+
 
 ## STEP 3: Model Training
 This section involves preparing the data for training, splitting it into training and testing sets, and fitting an SVM (Support Vector Machine) classifier to the training data using sklearn.
@@ -65,6 +77,12 @@ model.fit(X_train, y_train)  # Train the model using training data
 
 ## STEP 4: Evaluating the Model
 **1. Confusion Matrix Heatmap:** After model evaluation, the sns.heatmap is used to display the confusion matrix, allowing a visual representation of true positive, true negative, false positive, and false negative predictions. It helps understand the model's performance and where it misclassifies instances.
+
+![image](https://github.com/Devansh-Gupta-Official/breast-cancer-classification/assets/100591612/02284e15-ddaf-4a6f-8c47-535bfeb2e244)
+
+![image](https://github.com/Devansh-Gupta-Official/breast-cancer-classification/assets/100591612/f6857a3c-e09f-4993-91f0-fc71b1ac5231)
+
+
 
 **2. Normalized Features:** Visualization of the scaled or normalized features through scatterplots (sns.scatterplot) helps observe the distribution of data after normalization, which is crucial for algorithms sensitive to feature scales.
 
@@ -87,6 +105,7 @@ Grid search, a hyperparameter tuning technique, is employed here. It's utilized 
 **1. Baseline Model Performance:** The initial model (e.g., logistic regression, SVM) achieved an accuracy of approximately **94%** on the test set.
 
 **2. Confusion Matrix Analysis:** The confusion matrix heatmap illustrated the model's performance in classifying benign and malignant tumors. It showed that the model had a higher tendency to correctly identify benign tumors but had a few misclassifications for malignant cases.
+
 
 ### Performance Comparison:
 - Initial Model Accuracy: **94%**
