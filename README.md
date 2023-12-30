@@ -101,10 +101,16 @@ Grid search, a hyperparameter tuning technique, is employed here. It's utilized 
 
 **3. Correlation Heatmap:** The heatmap of feature correlations highlighted certain pairs of features exhibiting strong correlations. Notably, 'mean radius' and 'mean perimeter' displayed a high correlation, indicating potential multicollinearity.
 
+
 ### Model Evaluation
 **1. Baseline Model Performance:** The initial model (e.g., logistic regression, SVM) achieved an accuracy of approximately **94%** on the test set.
 
 **2. Confusion Matrix Analysis:** The confusion matrix heatmap illustrated the model's performance in classifying benign and malignant tumors. It showed that the model had a higher tendency to correctly identify benign tumors but had a few misclassifications for malignant cases.
+
+![image](https://github.com/Devansh-Gupta-Official/breast-cancer-classification/assets/100591612/d84957ca-5f93-4925-ad1e-8078f8253bdd)
+
+![image](https://github.com/Devansh-Gupta-Official/breast-cancer-classification/assets/100591612/50ea1c79-a4b1-4326-add9-b9d5affd00d2)
+
 
 
 ### Performance Comparison:
